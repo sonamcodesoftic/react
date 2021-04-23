@@ -1,7 +1,10 @@
 import React from 'react';
-
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router  ,Link } from 'react-router-dom';
+import Routes from '../Routes/RoutesPage';
 const Footer = () => {
     return(
+        <Router>
         <div class="footer mt-5">
              
             <div class="container">
@@ -10,13 +13,16 @@ const Footer = () => {
                        <img src="https://lokalkw.com/images/logo.png" className="" alt="logo" height="30"  />
                     </div>
                     <div class="col-md-3 mt-5 links-items">
+                    
                         <ul>
                             <li class="mb-4">INFORMATION</li>
-                            <li><p>HOME</p></li>
-                            <li><p>ABOUT US</p></li>
-                            <li><p>CONTACT US</p></li>
-                            <li><p>TERMS & CONDITIONS</p></li>
+                            <Link class="nav-link" to="/">Home</Link>
+                            <Link class="nav-link" to="/About">AboutUs</Link>
+                            <Link class="nav-link" to="/Contactus">Contact US</Link>
+                            <Link class="nav-link" to="/Termaconditions">Terms & Conditions</Link>
                         </ul>
+                        
+                        
                     </div>
                     <div class="col-md-3 mt-5 links-items">
                         <ul>
@@ -45,6 +51,8 @@ const Footer = () => {
                 </div>
             </div>
         </div>
+        <Routes />
+        </Router>
     );
 }
  export default Footer;
