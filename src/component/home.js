@@ -20,7 +20,7 @@ const HomePage =() => {
        
 
         {/* For Terms & Conditions Page */}
-
+        
         {/* 
         <Header />
         <Termaconditions />
@@ -40,12 +40,11 @@ const HomePage =() => {
         {/* git URL https://github.com/sonamcodesoftic/react.git */}
         
         
-          <Header />
-          <Slider />
+          
+           <Slider />
           <Welcome />
           <Product />
-          <Footer />
-        
+          
       </div>  
     );
 }
