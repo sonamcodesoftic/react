@@ -9,7 +9,7 @@ import Footer from '../component/Footer';
 const About = () => {
     return (
         <div>
-          <Slider />
+          {/* <Slider /> */}
           <Aboutuscontent />
         </div>
     )
